@@ -1,32 +1,60 @@
-import { useEffect, useState } from 'react';
-
 function HomePage() {
-  const [code, setCode] = useState('');
-  const initialCode = '6wxe6h';
-  useEffect(() => {
-    let result = '';
-    for (let i = 0; i < initialCode.length; i++) {
-      const number = initialCode.charCodeAt(i) % 10;
-      result += number;
-    }
-    setCode(result);
-  }, []);
-
   return (
-    <div style={{ width: '100%' }}>
-      <div
+    <div
+      style={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}
+    >
+      <h1 style={{ fontFamily: 'fantasy', color: '#4b9be1' }}>
+        {"Firestar's website"}
+      </h1>
+      <h2
         style={{
-          height: 'CALC(100vh - 1rem)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '2rem'
+          fontFamily: 'cursive',
+          color: 'rgb(243, 103, 123)',
+          marginBottom: '10rem'
         }}
       >
-        {code}
-      </div>
+        click the buttons below
+      </h2>
+      <button
+        style={{
+          fontFamily: 'monospace',
+          padding: '1rem',
+          fontSize: '2rem',
+          background: 'blue',
+          color: 'white'
+        }}
+        onClick={() => alert('Hello there')}
+      >
+        Welcome
+      </button>
+      <button
+        style={{
+          fontFamily: 'monospace',
+          padding: '1rem',
+          fontSize: '2rem',
+          background: 'orange',
+          color: 'white',
+          marginTop: '2rem'
+        }}
+        onClick={() => {
+          let name = prompt("What's your name?");
+          if (name) {
+            alert('Nice to meet you, ' + name + '!');
+          } else {
+            alert('Nice to meet you, stranger');
+          }
+        }}
+      >
+        {"What's your name?"}
+      </button>
     </div>
-  )
+  );
 }
 
 export default HomePage;
