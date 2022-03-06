@@ -51,7 +51,7 @@ function HomePage() {
           }
         }}
       >
-        {"What's your name?"}
+        {"Hi I am Firestar!"}
       </button>
     </div>
   );
