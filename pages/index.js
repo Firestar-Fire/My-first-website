@@ -43,7 +43,7 @@ function HomePage() {
           marginTop: '2rem'
         }}
         onClick={() => {
-          let name = prompt("What's your name?");
+          let name = prompt("Nice to meet you!");
           if (name) {
             alert('Nice to meet you, ' + name + '!');
           } else {
