@@ -47,7 +47,7 @@ function HomePage() {
           if (name) {
             alert('Nice to meet you, ' + name + '!');
           } else {
-            alert('Nice to meet you, stranger');
+            alert('Nice to meet you handsome');
           }
         }}
       >
