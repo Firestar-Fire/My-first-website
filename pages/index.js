@@ -19,7 +19,7 @@ function HomePage() {
           marginBottom: '10rem'
         }}
       >
-        click the buttons below
+        what do you think you should do? click the buttons below!
       </h2>
       <button
         style={{
