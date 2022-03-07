@@ -29,7 +29,7 @@ function HomePage() {
           background: 'blue',
           color: 'white'
         }}
-        onClick={() => alert('Hello there')}
+        onClick={() => alert('Hi friends~~!!')}
       >
         Welcome
       </button>
